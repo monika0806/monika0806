@@ -25,13 +25,13 @@ alt="Typing SVG"
 
 <div align="center">
 
-## 🐍 Contribution Snake
+🐍 Contribution Snake
 
 <img src="https://raw.githubusercontent.com/monika0806/monika0806/output/github-snake-dark.svg" alt="GitHub Contribution Snake"/>
 
 </div>
 <div align="center">
-## 🌱 Currently Exploring
+🌱 Currently Exploring
 🤖 Artificial Intelligence  
 📊 Data Science & Machine Learning  
 🧠 Deep Learning  

@@ -3,31 +3,27 @@
 
   <defs>
 
-    <!-- Main futuristic background -->
-    <linearGradient id="background"
-                    x1="0%" y1="0%"
-                    x2="100%" y2="100%">
+    <!-- Futuristic background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#050816"/>
-      <stop offset="45%" stop-color="#11113b"/>
+      <stop offset="50%" stop-color="#17104a"/>
       <stop offset="100%" stop-color="#050816"/>
     </linearGradient>
 
-    <!-- Neon text -->
-    <linearGradient id="neonText"
-                    x1="0%" y1="0%"
-                    x2="100%" y2="0%">
+    <!-- Animated text gradient -->
+    <linearGradient id="textGradient">
       <stop offset="0%" stop-color="#60a5fa"/>
-      <stop offset="45%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#c084fc"/>
       <stop offset="100%" stop-color="#22d3ee"/>
 
       <animate
         attributeName="x1"
         values="0%;100%;0%"
-        dur="6s"
+        dur="5s"
         repeatCount="indefinite"/>
     </linearGradient>
 
-    <!-- Core gradient -->
+    <!-- AI core -->
     <radialGradient id="core">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="20%" stop-color="#c084fc"/>
@@ -37,14 +33,14 @@
 
     <!-- Glow -->
     <filter id="glow">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
 
-    <filter id="strongGlow">
+    <filter id="bigGlow">
       <feGaussianBlur stdDeviation="10" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -52,278 +48,301 @@
       </feMerge>
     </filter>
 
-    <!-- Grid -->
+    <!-- Futuristic grid -->
     <pattern id="grid"
              width="45"
              height="45"
              patternUnits="userSpaceOnUse">
-      <path d="M 45 0 L 0 0 0 45"
-            fill="none"
-            stroke="#6366f1"
-            stroke-width="0.5"
-            opacity="0.18"/>
+
+      <path
+        d="M 45 0 L 0 0 0 45"
+        fill="none"
+        stroke="#6366f1"
+        stroke-width="0.5"
+        opacity="0.18"/>
+
     </pattern>
 
   </defs>
 
 
-  <!-- ================================================= -->
-  <!-- BACKGROUND -->
-  <!-- ================================================= -->
+  <!-- ================= BACKGROUND ================= -->
 
-  <rect width="1200"
-        height="330"
-        rx="28"
-        fill="url(#background)"/>
+  <rect
+    width="1200"
+    height="330"
+    rx="28"
+    fill="url(#bg)"/>
 
-  <rect width="1200"
-        height="330"
-        rx="28"
-        fill="url(#grid)"/>
-
-
-  <!-- ================================================= -->
-  <!-- FLOATING PARTICLES -->
-  <!-- ================================================= -->
-
-  <g fill="#a855f7">
-
-    <circle cx="90" cy="70" r="2">
-      <animate attributeName="cy"
-               values="70;55;70"
-               dur="3s"
-               repeatCount="indefinite"/>
-      <animate attributeName="opacity"
-               values="0.2;1;0.2"
-               dur="3s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="170" cy="230" r="2">
-      <animate attributeName="cy"
-               values="230;210;230"
-               dur="4s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="1030" cy="75" r="2">
-      <animate attributeName="cy"
-               values="75;55;75"
-               dur="3s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="1110" cy="220" r="2">
-      <animate attributeName="cy"
-               values="220;200;220"
-               dur="4s"
-               repeatCount="indefinite"/>
-    </circle>
-
-  </g>
+  <rect
+    width="1200"
+    height="330"
+    rx="28"
+    fill="url(#grid)"/>
 
 
-  <!-- ================================================= -->
-  <!-- NEURAL NETWORK -->
-  <!-- ================================================= -->
+  <!-- ================= FLOATING PARTICLES ================= -->
 
-  <g stroke="#6366f1"
-     stroke-width="1.5"
-     opacity="0.55"
-     fill="none">
+  <g fill="#c084fc">
 
-    <!-- Left network -->
-    <path d="M120 150 L250 110 L360 150"/>
-    <path d="M120 150 L250 200 L360 150"/>
-    <path d="M250 110 L250 200"/>
+    <circle cx="80" cy="70" r="2">
+      <animate
+        attributeName="cy"
+        values="70;55;70"
+        dur="3s"
+        repeatCount="indefinite"/>
 
-    <!-- Right network -->
-    <path d="M840 150 L950 110 L1080 150"/>
-    <path d="M840 150 L950 200 L1080 150"/>
-    <path d="M950 110 L950 200"/>
-
-    <!-- Connections to core -->
-    <path d="M360 150 L480 150"/>
-    <path d="M720 150 L840 150"/>
-
-  </g>
-
-
-  <!-- ================================================= -->
-  <!-- NETWORK NODES -->
-  <!-- ================================================= -->
-
-  <g fill="#60a5fa"
-     filter="url(#glow)">
-
-    <circle cx="120" cy="150" r="5">
-      <animate attributeName="r"
-               values="4;8;4"
-               dur="2s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="250" cy="110" r="5"/>
-    <circle cx="250" cy="200" r="5"/>
-    <circle cx="360" cy="150" r="6"/>
-
-    <circle cx="840" cy="150" r="6"/>
-
-    <circle cx="950" cy="110" r="5"/>
-    <circle cx="950" cy="200" r="5"/>
-
-    <circle cx="1080" cy="150" r="5">
-      <animate attributeName="r"
-               values="4;8;4"
-               dur="2s"
-               repeatCount="indefinite"/>
-    </circle>
-
-  </g>
-
-
-  <!-- ================================================= -->
-  <!-- MOVING DATA PARTICLES -->
-  <!-- ================================================= -->
-
-  <g fill="#22d3ee">
-
-    <circle r="4">
-      <animateMotion
-        path="M120 150 L250 110 L360 150 L480 150"
+      <animate
+        attributeName="opacity"
+        values="0.2;1;0.2"
         dur="3s"
         repeatCount="indefinite"/>
     </circle>
 
-    <circle r="4">
-      <animateMotion
-        path="M1080 150 L950 110 L840 150 L720 150"
-        dur="3.5s"
+
+    <circle cx="170" cy="245" r="2">
+      <animate
+        attributeName="cy"
+        values="245;225;245"
+        dur="4s"
+        repeatCount="indefinite"/>
+    </circle>
+
+
+    <circle cx="1030" cy="70" r="2">
+      <animate
+        attributeName="cy"
+        values="70;50;70"
+        dur="3s"
+        repeatCount="indefinite"/>
+    </circle>
+
+
+    <circle cx="1120" cy="235" r="2">
+      <animate
+        attributeName="cy"
+        values="235;215;235"
+        dur="4s"
         repeatCount="indefinite"/>
     </circle>
 
   </g>
 
 
-  <!-- ================================================= -->
-  <!-- AI CORE -->
-  <!-- ================================================= -->
+  <!-- ================= NEURAL NETWORK ================= -->
 
-  <circle cx="600"
-          cy="150"
-          r="65"
-          fill="#6366f1"
-          opacity="0.12"
-          filter="url(#strongGlow)">
+  <g
+    stroke="#6366f1"
+    stroke-width="1.5"
+    opacity="0.6"
+    fill="none">
 
-    <animate attributeName="r"
-             values="60;75;60"
-             dur="3s"
-             repeatCount="indefinite"/>
+    <!-- Left network -->
+    <path d="M100 150 L230 105 L350 150"/>
+    <path d="M100 150 L230 200 L350 150"/>
+    <path d="M230 105 L230 200"/>
 
-    <animate attributeName="opacity"
-             values="0.08;0.22;0.08"
-             dur="3s"
-             repeatCount="indefinite"/>
+    <!-- Right network -->
+    <path d="M850 150 L970 105 L1100 150"/>
+    <path d="M850 150 L970 200 L1100 150"/>
+    <path d="M970 105 L970 200"/>
+
+    <!-- Core connections -->
+    <path d="M350 150 L480 150"/>
+    <path d="M720 150 L850 150"/>
+
+  </g>
+
+
+  <!-- ================= NETWORK NODES ================= -->
+
+  <g fill="#60a5fa" filter="url(#glow)">
+
+    <circle cx="100" cy="150" r="5">
+      <animate
+        attributeName="r"
+        values="4;8;4"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="230" cy="105" r="5"/>
+    <circle cx="230" cy="200" r="5"/>
+    <circle cx="350" cy="150" r="6"/>
+
+    <circle cx="850" cy="150" r="6"/>
+
+    <circle cx="970" cy="105" r="5"/>
+    <circle cx="970" cy="200" r="5"/>
+
+    <circle cx="1100" cy="150" r="5">
+      <animate
+        attributeName="r"
+        values="4;8;4"
+        dur="2s"
+        repeatCount="indefinite"/>
+    </circle>
+
+  </g>
+
+
+  <!-- ================= MOVING DATA ================= -->
+
+  <g fill="#22d3ee">
+
+    <circle r="4">
+
+      <animateMotion
+        path="M100 150 L230 105 L350 150 L480 150"
+        dur="3s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+
+    <circle r="4">
+
+      <animateMotion
+        path="M1100 150 L970 105 L850 150 L720 150"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+
+    </circle>
+
+  </g>
+
+
+  <!-- ================= AI CORE ================= -->
+
+  <circle
+    cx="600"
+    cy="150"
+    r="75"
+    fill="#6366f1"
+    opacity="0.12"
+    filter="url(#bigGlow)">
+
+    <animate
+      attributeName="r"
+      values="65;82;65"
+      dur="3s"
+      repeatCount="indefinite"/>
+
+    <animate
+      attributeName="opacity"
+      values="0.08;0.25;0.08"
+      dur="3s"
+      repeatCount="indefinite"/>
+
   </circle>
 
 
-  <circle cx="600"
-          cy="150"
-          r="42"
-          fill="url(#core)"
-          filter="url(#glow)">
+  <circle
+    cx="600"
+    cy="150"
+    r="43"
+    fill="url(#core)"
+    filter="url(#glow)">
 
-    <animate attributeName="r"
-             values="40;45;40"
-             dur="2s"
-             repeatCount="indefinite"/>
+    <animate
+      attributeName="r"
+      values="40;46;40"
+      dur="2s"
+      repeatCount="indefinite"/>
+
   </circle>
 
 
-  <!-- AI core symbol -->
+  <!-- AI symbol -->
 
-  <text x="600"
-        y="162"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="34"
-        font-weight="bold"
-        fill="white">
+  <text
+    x="600"
+    y="161"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="30"
+    font-weight="bold"
+    fill="white">
 
     AI
 
   </text>
 
 
-  <!-- ================================================= -->
-  <!-- MAIN NAME -->
-  <!-- ================================================= -->
+  <!-- ================= TOP TITLE ================= -->
 
-  <text x="600"
-        y="65"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="18"
-        letter-spacing="6"
-        fill="#94a3b8">
+  <text
+    x="600"
+    y="55"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17"
+    letter-spacing="5"
+    fill="#94a3b8">
 
-    ARTIFICIAL INTELLIGENCE 
+    WELCOME TO MY AI SPACE
 
-  </text>
-
-
-  <text x="600"
-        y="250"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="58"
-        font-weight="800"
-        letter-spacing="5"
-        fill="url(#neonText)"
-        filter="url(#glow)">
-
-    MONIKA M
+    <animate
+      attributeName="opacity"
+      values="0.5;1;0.5"
+      dur="3s"
+      repeatCount="indefinite"/>
 
   </text>
 
 
-  <!-- ================================================= -->
-  <!-- IDENTITY -->
-  <!-- ================================================= -->
+  <!-- ================= MAIN INTRODUCTION ================= -->
 
-  <text x="600"
-        y="280"
-        text-anchor="middle"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="17"
-        letter-spacing="2"
-        fill="#cbd5e1">
+  <text
+    x="600"
+    y="250"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="52"
+    font-weight="800"
+    letter-spacing="3"
+    fill="url(#textGradient)"
+    filter="url(#glow)">
 
-    AI × DATA × INTELLIGENCE
+    HI, I'M MONIKA M
+
+  </text>
+
+
+  <!-- ================= PROFESSION ================= -->
+
+  <text
+    x="600"
+    y="280"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17"
+    letter-spacing="1.5"
+    fill="#e2e8f0">
+
+    Artificial Intelligence &amp; Data Science Engineer
 
   </text>
 
 
-  <!-- ================================================= -->
-  <!-- TERMINAL LINE -->
-  <!-- ================================================= -->
+  <!-- ================= TERMINAL ================= -->
 
-  <text x="600"
-        y="307"
-        text-anchor="middle"
-        font-family="monospace"
-        font-size="13"
-        fill="#64748b">
+  <text
+    x="600"
+    y="307"
+    text-anchor="middle"
+    font-family="monospace"
+    font-size="13"
+    fill="#64748b">
 
-    &lt; building • learning • experimenting /&gt;
+    &lt; build • learn • create • repeat /&gt;
 
-    <animate attributeName="opacity"
-             values="0.4;1;0.4"
-             dur="2.5s"
-             repeatCount="indefinite"/>
+    <animate
+      attributeName="opacity"
+      values="0.35;1;0.35"
+      dur="2.5s"
+      repeatCount="indefinite"/>
 
   </text>
-
 
 </svg>

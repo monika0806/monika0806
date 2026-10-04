@@ -48,7 +48,4 @@ alt="Typing SVG"
 <br>
 
 <div align="center">
-
-✨ **Thanks for visiting my profile!** ✨
-
 </div>

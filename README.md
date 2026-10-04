@@ -1,16 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&text=MONIKA&fontAlign=50&fontAlignY=35&fontSize=60&desc=Artificial%20Intelligence%20%26%20Data%20Science%20Engineer&descAlignY=60&color=gradient&animation=fadeIn" width="100%"/>
+<img src="https://raw.githubusercontent.com/monika0806/monika0806/main/header.svg" width="100%" alt="Monika Header"/>
 
 <br>
-
-<h2>Hey! I'm Monika 👋</h2>
 
 <a href="https://git.io/typing-svg">
 <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=500&size=22&pause=1000&color=A855F7&center=true&vCenter=true&width=750&height=60&lines=Artificial+Intelligence+%26+Data+Science+Engineer;AI+%26+Machine+Learning+Enthusiast;Exploring+Data+%7C+IoT+%7C+Cloud;Turning+Ideas+Into+Reality+%E2%9C%A8" alt="Typing SVG"/>
 </a>
-
-<br><br>
 
 </div>
 
@@ -18,11 +14,14 @@
 
 <div align="center">
 
-### ✨ About Me
+## ✨ About Me
 
-🎓 Artificial Intelligence & Data Science Engineer  
-🤖 AI • Machine Learning • Data Science  
-🌐 Exploring IoT & Cloud Technologies  
+🎓 **Artificial Intelligence & Data Science Engineer**
+
+🤖 AI • Machine Learning • Data Science
+
+🌐 Exploring IoT & Cloud Technologies
+
 💻 Building • Learning • Experimenting
 
 </div>
@@ -31,7 +30,7 @@
 
 <div align="center">
 
-### ⚡ Tech Stack
+## ⚡ Tech Stack
 
 <img src="https://skillicons.dev/icons?i=python,java,c,cpp,js,react,flask,spring,mongodb,postgresql,docker,git&perline=6"/>
 
@@ -41,7 +40,7 @@
 
 <div align="center">
 
-### 📊 GitHub
+## 📊 GitHub Activity
 
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=monika0806&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github"/>
 
@@ -57,9 +56,9 @@
 
 <div align="center">
 
-### 🐍 Contribution Snake
+## 🐍 Contribution Snake
 
-<img src="https://raw.githubusercontent.com/monika0806/monika0806/output/github-snake-dark.svg" alt="Contribution Snake"/>
+<img src="https://raw.githubusercontent.com/monika0806/monika0806/output/github-snake-dark.svg" alt="GitHub Contribution Snake"/>
 
 </div>
 
@@ -67,7 +66,7 @@
 
 <div align="center">
 
-### 🌱 Currently Exploring
+## 🌱 Currently Exploring
 
 🤖 Artificial Intelligence  
 📊 Data Science & Machine Learning  
@@ -80,7 +79,7 @@
 
 <div align="center">
 
-### 💜 Connect With Me
+## 💜 Connect With Me
 
 <a href="https://github.com/monika0806">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
@@ -96,6 +95,6 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=gradient"/>
+✨ **Thanks for visiting my profile!** ✨
 
 </div>

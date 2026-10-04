@@ -19,27 +19,10 @@ alt="Typing SVG"
 
 <div align="center">
 
-## ✨ About Me
-
-🎓 **Artificial Intelligence & Data Science Engineer**
-
-🤖 AI • Machine Learning • Data Science
-
-🌐 Exploring IoT & Cloud Technologies
-
-💻 Building • Learning • Experimenting
-
 </div>
 
 <br>
 
-<div align="center">
-
-## ⚡ Tech Stack
-
-<img src="https://skillicons.dev/icons?i=python,java,c,cpp,js,react,flask,spring,mongodb,postgresql,docker,git&perline=6"/>
-
-</div>
 <div align="center">
 
 ## 🐍 Contribution Snake
